@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-06-24T08:02:38.608Z",
+  "created_by": "executing-plans",
+  "phase": "implement",
+  "work_item_id": "ccug-website",
+  "run_id": "20260624-080200Z-exe07",
+  "agent": "executing-plans",
+  "status": "ok",
+  "scope": "ccug-website",
+  "tasks_completed": 7,
+  "commits": [],
+  "mode": "interactive",
+  "note": "Static no-JS site; per-plan verification is manual browser inspection (no test framework per the ADR). All 3 pages rendered and verified at desktop + 375px; acceptance criteria (>=3 news, >=4 guides, active nav, shared chrome, no console errors) confirmed via Playwright."
+}

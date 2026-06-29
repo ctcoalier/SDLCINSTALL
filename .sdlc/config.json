@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "version": "0.0.1",
+  "monorepo": false,
+  "package_manager": "pnpm",
+  "commands": {
+    "validate": {
+      "exec": "node scripts/validate.js"
+    }
+  },
+  "patterns": {
+    "main_branch": "main"
+  },
+  "prd_dir": "docs/product",
+  "roadmap_path": "docs/product/ccug-website/roadmap.md"
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "phase": "spec",
+  "nodes": {
+    "spec.target-identified": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:02:34.972Z"
+    },
+    "spec.context-gathered": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:02:55.926Z"
+    },
+    "spec.spec-drafted": {
+      "status": "in_progress"
+    },
+    "spec.spec-simulated": {
+      "status": "in_progress"
+    },
+    "spec.spec-refined": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:06:02.592Z"
+    },
+    "spec.adr-needed-decision": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:36:37.249Z"
+    },
+    "spec.adrs-brainstormed": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:37:18.446Z"
+    },
+    "spec.adrs-validated": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:37:37.070Z"
+    },
+    "spec.adrs-saved": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:38:19.301Z"
+    },
+    "spec.adr-spec-cross-ref-synced": {
+      "status": "in_progress"
+    },
+    "spec.spec-saved": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:39:40.447Z"
+    },
+    "spec.spec-validated": {
+      "status": "pending"
+    },
+    "spec.adr-cited": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:40:36.986Z"
+    },
+    "spec.adr-compliant": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:41:43.182Z"
+    },
+    "spec.complete": {
+      "status": "converged",
+      "converged_at": "2026-06-24T07:41:43.182Z"
+    }
+  },
+  "agents": [
+    {
+      "run_id": "20260624-070300Z-tgt001",
+      "agent": "identifying-target-work",
+      "result": "{\"status\":\"ok\",\"standalone\":true,\"scope\":\"ccug-website\"}",
+      "at": "2026-06-24T07:02:34.972Z"
+    },
+    {
+      "run_id": "20260624-070400Z-ctx002",
+      "agent": "gathering-design-context",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"relevant_specs\":[],\"relevant_adrs\":[],\"branch_fork_changes\":[],\"code_anchors\":[]}",
+      "at": "2026-06-24T07:02:55.926Z"
+    },
+    {
+      "run_id": "20260624-070500Z-spec03",
+      "agent": "writing-specs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"spec_path\":\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\"}",
+      "at": "2026-06-24T07:04:33.798Z"
+    },
+    {
+      "run_id": "20260624-070600Z-sim004",
+      "agent": "simulating-specs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"spec_path\":\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\",\"simulator-flagged-adr\":true,\"findings_count\":5}",
+      "at": "2026-06-24T07:05:19.151Z"
+    },
+    {
+      "run_id": "20260624-070700Z-ref005",
+      "agent": "refining-specs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"spec_path\":\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\",\"convergence_signal\":\"refining-specs\",\"converged_round\":1}",
+      "at": "2026-06-24T07:06:02.592Z"
+    },
+    {
+      "run_id": "20260624-070800Z-brn007",
+      "agent": "brainstorming-adrs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"decision_topic\":\"foundational-frontend-stack\",\"spec_path\":\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\"}",
+      "at": "2026-06-24T07:37:18.446Z"
+    },
+    {
+      "run_id": "20260624-070900Z-val008",
+      "agent": "validating-adrs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"decision_topic\":\"foundational-frontend-stack\",\"findings\":[]}",
+      "at": "2026-06-24T07:37:37.070Z"
+    },
+    {
+      "run_id": "20260624-071000Z-sav009",
+      "agent": "saving-adrs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"spec_path\":\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\",\"saved_adrs\":[\"docs/architecture/adr/2026-06-24-foundational-frontend-stack.md\"]}",
+      "at": "2026-06-24T07:38:19.301Z"
+    },
+    {
+      "run_id": "20260624-071100Z-sav010",
+      "agent": "saving-specs",
+      "result": "{\"status\":\"ok\",\"scope\":\"ccug-website\",\"spec_path\":\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\",\"adr_compliance_initialized\":true,\"validation-tooling-deferred\":true}",
+      "at": "2026-06-24T07:39:40.447Z"
+    },
+    {
+      "run_id": "adr-citer-spec-ccug-website",
+      "agent": "adr-citer",
+      "result": "{\"status\":\"ok\",\"rationale_form\":\"bullets\"}",
+      "at": "2026-06-24T07:40:36.986Z"
+    }
+  ],
+  "approvals": [
+    {
+      "node": "spec.adr-needed-decision",
+      "decision": "yes",
+      "by": "user",
+      "at": "2026-06-24T07:36:37.249Z"
+    }
+  ],
+  "convergence": [
+    {
+      "node": "spec.adr-compliant",
+      "at": "2026-06-24T07:41:43.182Z"
+    }
+  ]
+}

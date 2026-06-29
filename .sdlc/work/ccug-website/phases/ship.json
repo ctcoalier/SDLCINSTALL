@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "phase": "ship",
+  "nodes": {
+    "ship.implementation-verified": {
+      "status": "pending"
+    },
+    "ship.changelog-updated": {
+      "status": "in_progress"
+    },
+    "ship.commits-clean": {
+      "status": "in_progress"
+    },
+    "ship.pr-created": {
+      "status": "in_progress"
+    },
+    "ship.pr-checks-green": {
+      "status": "pending"
+    },
+    "ship.review-approved": {
+      "status": "pending"
+    },
+    "ship.pr-merged": {
+      "status": "pending"
+    },
+    "ship.release-decision": {
+      "status": "pending"
+    },
+    "ship.bump": {
+      "status": "pending"
+    },
+    "ship.pre-release": {
+      "status": "pending"
+    },
+    "ship.tag-confirm": {
+      "status": "pending"
+    },
+    "ship.tag": {
+      "status": "pending"
+    },
+    "ship.publish-success": {
+      "status": "pending"
+    },
+    "ship.complete": {
+      "status": "pending"
+    }
+  },
+  "agents": [],
+  "approvals": [],
+  "convergence": []
+}

@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-06-24T08:06:36.643Z",
+  "created_by": "adr-auditor",
+  "phase": "implement",
+  "work_item_id": "ccug-website",
+  "node": "implement.adr-compliant",
+  "result": "converged"
+}
