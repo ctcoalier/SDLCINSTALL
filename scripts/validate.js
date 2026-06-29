@@ -6,6 +6,7 @@ const required = [
   'src/index.html',
   'src/news.html',
   'src/guides.html',
+  'src/spec.html',
   'src/assets/styles.css',
 ];
 

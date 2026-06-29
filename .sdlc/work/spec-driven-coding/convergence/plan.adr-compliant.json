@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-06-27T00:39:57.866Z",
+  "created_by": "main-thread",
+  "phase": "plan",
+  "work_item_id": "spec-driven-coding",
+  "node": "plan.adr-compliant",
+  "result": "converged"
+}

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-06-27T00:18:06.335Z",
+  "created_by": "main-thread",
+  "phase": "spec",
+  "work_item_id": "spec-driven-coding",
+  "run_id": "adr-citer-spec-spec-driven-coding",
+  "agent": "adr-citer",
+  "status": "ok",
+  "role": "citer",
+  "target_artifact": "spec",
+  "artifact_path": "docs/superpowers/specs/2026-06-26-spec-driven-coding-page.md",
+  "adrs_cited": [
+    "/docs/architecture/adr/2026-06-24-foundational-frontend-stack.md",
+    "/docs/architecture/adr/2026-06-26-static-code-sample-rendering.md"
+  ],
+  "rationale_written": true
+}

@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-06-27T00:39:56.761Z",
+  "created_by": "main-thread",
+  "phase": "plan",
+  "work_item_id": "spec-driven-coding",
+  "run_id": "adr-auditor-plan-spec-driven-coding",
+  "agent": "adr-auditor",
+  "status": "ok",
+  "role": "auditor",
+  "target_artifact": "plan-summary",
+  "adr_compliance": "compliant",
+  "layer1_preflight": "pass",
+  "layer2_semantic": "pass",
+  "violations": []
+}
