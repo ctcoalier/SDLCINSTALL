@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-06-24T08:05:51.695Z",
+  "created_by": "saving-implement-summaries",
+  "phase": "implement",
+  "work_item_id": "ccug-website",
+  "run_id": "20260624-080600Z-isv12",
+  "agent": "saving-implement-summaries",
+  "status": "ok",
+  "scope": "ccug-website",
+  "implement_summary_path": "docs/superpowers/implement-summaries/ccug-website/2026-06-24-ccug-website-static-site.md",
+  "adr_compliance_initialized": true
+}

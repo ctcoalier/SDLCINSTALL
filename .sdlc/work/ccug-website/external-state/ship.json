@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-06-24T16:46:49.489Z",
+  "created_by": "user",
+  "phase": "ship",
+  "work_item_id": "ccug-website",
+  "attested": true,
+  "note": "User opted to keep the ship local. Website built, verified, and committed locally on branch feat/ccug-website-static-site (commit bf9327c, 68 files under SDLCInstall/). Remote push/PR deferred: origin ctcoalier/arckit_PV is inaccessible to the authenticated gh account. CHANGELOG [Unreleased] updated; validate command passes."
+}

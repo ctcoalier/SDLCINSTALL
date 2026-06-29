@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "phase": "analyze",
+  "nodes": {
+    "analyze.context-gathered": {
+      "status": "converged",
+      "converged_at": "2026-06-24T06:52:13.403Z"
+    },
+    "analyze.prd-analyzed": {
+      "status": "in_progress"
+    },
+    "analyze.prd-simulated": {
+      "status": "pending"
+    },
+    "analyze.prd-saved": {
+      "status": "pending"
+    },
+    "analyze.roadmap-analyzed": {
+      "status": "pending"
+    },
+    "analyze.roadmap-simulated": {
+      "status": "pending"
+    },
+    "analyze.roadmap-estimated": {
+      "status": "pending"
+    },
+    "analyze.roadmap-saved": {
+      "status": "pending"
+    },
+    "analyze.roadmap-aligned": {
+      "status": "pending"
+    },
+    "analyze.adr-cited": {
+      "status": "pending"
+    },
+    "analyze.adr-compliant": {
+      "status": "pending"
+    },
+    "analyze.complete": {
+      "status": "pending"
+    }
+  },
+  "agents": [
+    {
+      "run_id": "2026-06-24T05:49:49Z-653d3a",
+      "agent": "gathering-product-context",
+      "result": "{\"status\":\"ok\",\"signals\":{\"has_prd\":false,\"has_roadmap\":false,\"prd_lifecycle_state\":\"absent\",\"roadmap_lifecycle_state\":\"absent\",\"related_specs\":[],\"material_pointers\":[\"https://www.sandiego.org/ (style + logo reference)\"],\"confirmed_intent\":\"Build the San Diego Claude Code Users Group (CCUG) website as simple HTML, visually styled after sandiego.org (style + logo treatment). Top-level menu: 'Claude News' and 'Dev Guides', each with appropriate authored content. Primary audience: the CCUG team/org and its members.\"}}",
+      "at": "2026-06-24T06:52:01.877Z"
+    },
+    {
+      "run_id": "20260624-054949Z-653d3a",
+      "agent": "gathering-product-context",
+      "result": "{\"status\":\"ok\",\"signals\":{\"has_prd\":false,\"has_roadmap\":false,\"prd_lifecycle_state\":\"absent\",\"roadmap_lifecycle_state\":\"absent\",\"related_specs\":[],\"material_pointers\":[\"https://www.sandiego.org/ (style + logo reference)\"],\"confirmed_intent\":\"Build the San Diego Claude Code Users Group (CCUG) website as simple HTML, visually styled after sandiego.org (style + logo treatment). Top-level menu: 'Claude News' and 'Dev Guides', each with appropriate authored content. Primary audience: the CCUG team/org and its members.\"}}",
+      "at": "2026-06-24T06:52:13.403Z"
+    }
+  ],
+  "approvals": [],
+  "convergence": []
+}
