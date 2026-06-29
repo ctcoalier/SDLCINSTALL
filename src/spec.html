@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spec Driven Coding — San Diego CCUG</title>
+  <meta name="description" content="Create new features with GitHub Spec Kit and the Superpowers plugin in Claude Code — a step-by-step spec-driven coding walkthrough from the San Diego CCUG." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='16' r='9' fill='%23f4b860'/%3E%3Cpath d='M2 28c4 0 4-3 8-3s4 3 8 3 4-3 8-3 4 3 8 3v6H2z' fill='%231378a6'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="San Diego Claude Code Users Group — home">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-hidden="true">
+          <circle cx="20" cy="16" r="9" fill="#f4b860"/>
+          <path d="M2 28c4 0 4-3 8-3s4 3 8 3 4-3 8-3 4 3 8 3v6H2z" fill="#1378a6"/>
+          <path d="M2 32c4 0 4-2.5 8-2.5s4 2.5 8 2.5 4-2.5 8-2.5 4 2.5 8 2.5v4H2z" fill="#08415c"/>
+        </svg>
+        <span class="brand-text">
+          San&nbsp;Diego CCUG
+          <span class="brand-sub">Claude Code Users Group</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="news.html">Claude News</a>
+        <a href="guides.html">Dev Guides</a>
+        <a href="spec.html" aria-current="page">Spec Driven Coding</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero banner">
+      <div class="container">
+        <span class="pill">Workflow</span>
+        <h1>Spec Driven Coding</h1>
+        <p class="tagline">
+          Go from idea to a planned, implemented feature with <strong>GitHub
+          Spec Kit</strong> and the <strong>Superpowers</strong> plugin —
+          orchestrated end-to-end inside Claude Code.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Why spec-driven?</h2>
+        <p class="lead">
+          Spec-driven development front-loads the thinking: you write a clear
+          spec, turn it into a plan, break the plan into tasks, and only then
+          generate code — each artifact reviewable before the next.
+          <strong>Spec Kit</strong> structures those artifacts with
+          <code>/speckit.*</code> slash commands; <strong>Superpowers</strong>
+          brings the process discipline — brainstorming the approach, writing the
+          plan, and test-driven implementation. Used together, Spec Kit gives the
+          skeleton and Superpowers keeps every step honest.
+        </p>
+
+        <h2>Prerequisites</h2>
+        <div class="card-grid">
+          <article class="card">
+            <span class="tag">Tooling</span>
+            <h3>Claude Code</h3>
+            <p>Installed and opened inside your project directory so it has your
+              code as context.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Plugin</span>
+            <h3>Superpowers</h3>
+            <p>The Superpowers plugin installed, so skills like
+              <code>brainstorming</code> and <code>test-driven-development</code>
+              trigger by name.</p>
+          </article>
+          <article class="card">
+            <span class="tag">CLI</span>
+            <h3>uv / uvx</h3>
+            <p>Astral's <code>uv</code> available, so the
+              <code>specify</code> CLI can bootstrap Spec Kit into your repo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2>Create a feature, start to finish</h2>
+        <p class="lead">
+          A real Claude Code session — Spec Kit commands interleaved with
+          Superpowers skills. Swap "saved searches" for whatever you're building.
+        </p>
+
+        <div class="terminal" role="img"
+             aria-label="A Claude Code terminal session that initializes Spec Kit, brainstorms with Superpowers, then runs the specify, plan, tasks, and implement commands to build a feature.">
+          <div class="terminal-bar" aria-hidden="true">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="terminal-title">claude — spec-driven-coding</span>
+          </div>
+<pre class="terminal-body" aria-hidden="true"><span class="t-prompt">$</span> <span class="t-cmd">uvx --from git+https://github.com/github/spec-kit.git specify init --here --ai claude</span>
+<span class="t-ok">✔</span> Spec Kit initialized · slash commands installed for Claude Code
+
+<span class="t-prompt">$</span> <span class="t-cmd">claude</span>
+
+<span class="t-prompt">&gt;</span> <span class="t-cmd">/speckit.constitution</span>
+  Establishing project principles — quality, testing, UX, performance…
+  <span class="t-ok">✔</span> Wrote .specify/memory/constitution.md
+
+<span class="t-prompt">&gt;</span> <span class="t-cmd">Let's add saved searches. Brainstorm the approach first.</span>
+  <span class="t-comment">⚡ superpowers:brainstorming — exploring intent, users, and edge cases</span>
+  <span class="t-ok">✔</span> Agreed scope: name a filter set, list saved searches, re-apply one
+
+<span class="t-prompt">&gt;</span> <span class="t-cmd">/speckit.specify Saved searches: name and revisit a set of filters</span>
+  <span class="t-ok">✔</span> specs/001-saved-searches/spec.md  (user stories + requirements)
+
+<span class="t-prompt">&gt;</span> <span class="t-cmd">/speckit.plan Use the existing stack; no new services</span>
+  <span class="t-ok">✔</span> plan.md · research.md · data-model.md · contracts/
+
+<span class="t-prompt">&gt;</span> <span class="t-cmd">/speckit.tasks</span>
+  <span class="t-ok">✔</span> tasks.md — 14 ordered, dependency-aware tasks
+
+<span class="t-prompt">&gt;</span> <span class="t-cmd">/speckit.implement</span>
+  <span class="t-comment">⚡ superpowers:test-driven-development — red → green per task</span>
+  <span class="t-ok">✔</span> 14/14 tasks complete · tests passing</pre>
+        </div>
+
+        <h2>The steps, in plain English</h2>
+        <div class="card-grid">
+          <article class="guide">
+            <h3>Walkthrough</h3>
+            <p class="blurb">The same flow as the terminal, readable top to bottom.</p>
+            <ol>
+              <li><strong>Initialize Spec Kit</strong> in your repo with
+                <code>specify init --here --ai claude</code>. It installs the
+                <code>/speckit.*</code> slash commands for Claude Code.</li>
+              <li><strong>Set the constitution</strong> —
+                <code>/speckit.constitution</code> records the project's
+                principles (quality, testing, UX, performance) so every later
+                step is judged against them.</li>
+              <li><strong>Brainstorm first</strong> — before specifying, let
+                Superpowers' <code>brainstorming</code> skill pin down intent,
+                users, and edge cases. Spec quality starts here.</li>
+              <li><strong>Specify</strong> —
+                <code>/speckit.specify</code> turns the agreed scope into a
+                spec with user stories and requirements.</li>
+              <li><strong>Plan</strong> — <code>/speckit.plan</code> adds the
+                technical approach: architecture, data model, and contracts,
+                constrained to your existing stack.</li>
+              <li><strong>Break into tasks</strong> — <code>/speckit.tasks</code>
+                produces an ordered, dependency-aware task list.</li>
+              <li><strong>Implement</strong> — <code>/speckit.implement</code>
+                executes the tasks. Pair it with Superpowers'
+                <code>test-driven-development</code> so each task goes red →
+                green before moving on.</li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="strip" style="margin-top:1.5rem;">
+          <div>
+            <div class="strip-title">Want the fundamentals first?</div>
+            <div class="strip-meta">
+              New to Claude Code? Start with the Dev Guides, then come back and
+              spec-drive your next feature.
+            </div>
+          </div>
+          <a class="btn btn-primary" href="guides.html">Browse Dev Guides</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <div class="foot-brand">San Diego CCUG</div>
+        <p class="muted">
+          Claude news and dev guides for the San Diego Claude Code community.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p class="muted">
+          <a href="index.html">Home</a><br />
+          <a href="news.html">Claude News</a><br />
+          <a href="guides.html">Dev Guides</a><br />
+          <a href="spec.html">Spec Driven Coding</a>
+        </p>
+      </div>
+      <div>
+        <h4>Meet up</h4>
+        <p class="muted">
+          Monthly, third Thursday, 6:00&nbsp;PM<br />
+          San Diego (venue TBA)<br />
+          <a href="mailto:hello@sdccug.example">hello@sdccug.example</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

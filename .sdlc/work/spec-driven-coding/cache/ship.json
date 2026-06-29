@@ -1,0 +1,10 @@
+{
+  "cache": {
+    "ship::spec-driven-coding::ship.commits-clean::ship.commits-clean::node scripts/validate.js::C:\\VSCODEProjects\\SDLCInstall": {
+      "key": "ship::spec-driven-coding::ship.commits-clean::ship.commits-clean::node scripts/validate.js::C:\\VSCODEProjects\\SDLCInstall",
+      "passed": true,
+      "stdout": "static-site validate: all required files present and non-empty\n",
+      "recorded_at": "2026-06-27T00:49:47.473Z"
+    }
+  }
+}

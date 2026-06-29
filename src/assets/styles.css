@@ -285,6 +285,55 @@ main { display: block; }
   font-size: 0.92em;
 }
 
+/* ---------- Terminal (code/terminal samples) ---------- */
+.terminal {
+  background: #0b2530;            /* deep slate — darker than --ocean-deep */
+  border: 1px solid #123544;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  background: #0e2c39;
+  border-bottom: 1px solid #123544;
+}
+.terminal-bar .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.terminal-bar .dot-r { background: #ff5f57; }
+.terminal-bar .dot-y { background: #febc2e; }
+.terminal-bar .dot-g { background: #28c840; }
+.terminal-bar .terminal-title {
+  margin-left: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: #9fc2d2;             /* ~6:1 on the bar */
+  font-weight: 600;
+}
+.terminal-body {
+  margin: 0;
+  padding: 1.1rem 1.2rem;
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", Menlo, monospace;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: #e8eef0;            /* high-contrast light text */
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 2;
+}
+.terminal-body .t-prompt { color: #f4b860; font-weight: 700; }  /* sandy gold prompt */
+.terminal-body .t-cmd    { color: #ffffff; font-weight: 600; }  /* command */
+.terminal-body .t-comment{ color: #8fb3c4; }                    /* muted ~6:1 */
+.terminal-body .t-ok     { color: #6fe0a8; }                    /* success ~9:1 */
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--ocean-deep);
@@ -309,6 +358,7 @@ main { display: block; }
   .nav { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
   .brand .brand-text { font-size: 0.98rem; }
   .strip { flex-direction: column; align-items: flex-start; }
+  .terminal-body { font-size: 0.78rem; padding: 0.9rem 1rem; }
 }
 
 /* Accessible focus ring */

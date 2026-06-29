@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-06-27T00:19:40.282Z",
+  "created_by": "main-thread",
+  "phase": "plan",
+  "work_item_id": "spec-driven-coding",
+  "run_id": "20260626-100021Z-planctx1",
+  "agent": "gathering-plan-context",
+  "status": "ok",
+  "spec": "docs/superpowers/specs/2026-06-26-spec-driven-coding-page.md",
+  "in_scope_code": [
+    "src/index.html",
+    "src/news.html",
+    "src/guides.html",
+    "src/spec.html (new)",
+    "src/assets/styles.css",
+    "scripts/validate.js"
+  ],
+  "cited_adrs": [
+    "docs/architecture/adr/2026-06-24-foundational-frontend-stack.md",
+    "docs/architecture/adr/2026-06-26-static-code-sample-rendering.md"
+  ],
+  "test_patterns": [
+    "scripts/validate.js required-files check",
+    "Playwright visual verification"
+  ],
+  "notes": "No test framework; validation is file-existence + visual. Branch off main."
+}

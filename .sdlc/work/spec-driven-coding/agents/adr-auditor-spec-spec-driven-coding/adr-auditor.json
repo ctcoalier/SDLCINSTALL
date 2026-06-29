@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-06-27T00:18:33.260Z",
+  "created_by": "main-thread",
+  "phase": "spec",
+  "work_item_id": "spec-driven-coding",
+  "run_id": "adr-auditor-spec-spec-driven-coding",
+  "agent": "adr-auditor",
+  "status": "ok",
+  "role": "auditor",
+  "target_artifact": "spec",
+  "adr_compliance": "compliant",
+  "layer1_preflight": "pass",
+  "layer2_semantic": "pass",
+  "violations": [],
+  "note": "Spec is consistent with foundational-frontend-stack and static-code-sample-rendering; no JS, no deps, semantic markup."
+}

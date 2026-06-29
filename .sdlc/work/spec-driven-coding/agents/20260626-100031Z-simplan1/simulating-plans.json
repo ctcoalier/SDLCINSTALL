@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-06-27T00:22:09.341Z",
+  "created_by": "main-thread",
+  "phase": "plan",
+  "work_item_id": "spec-driven-coding",
+  "run_id": "20260626-100031Z-simplan1",
+  "agent": "simulating-plans",
+  "status": "ok",
+  "last_plan_state": "simulated",
+  "risky_assumptions_present": false,
+  "lenses": {
+    "sequencing": "low",
+    "dependencies": "none",
+    "test_gaps": "acceptable"
+  }
+}
