@@ -7,6 +7,7 @@ const required = [
   'src/news.html',
   'src/guides.html',
   'src/spec.html',
+  'src/events.html',
   'src/assets/styles.css',
 ];
 
