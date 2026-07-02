@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-07-02T21:06:47.043Z",
+  "created_by": "ccoalier (user-approved via Claude Code session)",
+  "phase": "ship",
+  "work_item_id": "spec-driven-coding",
+  "attested": true,
+  "note": "Shipped via PR stack merged to main: PR #1 (feat/ccug-website -> main, rebase, commit 17cd137) then PR #2 (feat/spec-driven-coding -> main, rebase, merge commit 9ad2089). Both features now on remote main. Static HTML site: no CI checks, no version bump/tag/publish artifact — pr-checks-green and the release/tag/publish nodes are N/A for this project type. validate.js passed locally. Supersedes the earlier (incorrect) attestation which claimed a direct-to-main ff-merge as commit 1af1381 that never actually landed on main."
+}

@@ -5,6 +5,12 @@
       "passed": true,
       "stdout": "static-site validate: all required files present and non-empty\n",
       "recorded_at": "2026-06-24T08:11:33.153Z"
+    },
+    "ship::ccug-website::ship.pr-created::ship.pr-created::gh pr view feat/ccug-website --repo ctcoalier/SDLCINSTALL --json url -q .url::C:\\VSCODEProjects\\SDLCInstall": {
+      "key": "ship::ccug-website::ship.pr-created::ship.pr-created::gh pr view feat/ccug-website --repo ctcoalier/SDLCINSTALL --json url -q .url::C:\\VSCODEProjects\\SDLCInstall",
+      "passed": true,
+      "stdout": "https://github.com/ctcoalier/SDLCINSTALL/pull/1\n",
+      "recorded_at": "2026-06-29T02:55:40.491Z"
     }
   }
 }
