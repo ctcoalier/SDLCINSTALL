@@ -79,3 +79,7 @@
 {"ts":"2026-06-24T08:11:23.075Z","kind":"state_persisted","work_item_id":"ccug-website","phase":"ship"}
 {"ts":"2026-06-24T08:11:33.246Z","kind":"state_persisted","work_item_id":"ccug-website","phase":"ship"}
 {"ts":"2026-06-24T16:46:49.500Z","kind":"external_state","work_item_id":"ccug-website","phase":"ship","payload":{"attestedBy":"user","note":"User opted to keep the ship local. Website built, verified, and committed locally on branch feat/ccug-website-static-site (commit bf9327c, 68 files under SDLCInstall/). Remote push/PR deferred: origin ctcoalier/arckit_PV is inaccessible to the authenticated gh account. CHANGELOG [Unreleased] updated; validate command passes."}}
+{"ts":"2026-06-29T02:32:58.459Z","kind":"state_persisted","work_item_id":"ccug-website","phase":"ship"}
+{"ts":"2026-06-29T02:54:07.334Z","kind":"state_persisted","work_item_id":"ccug-website","phase":"ship"}
+{"ts":"2026-06-29T02:55:33.852Z","kind":"state_persisted","work_item_id":"ccug-website","phase":"ship"}
+{"ts":"2026-06-29T02:55:40.643Z","kind":"state_persisted","work_item_id":"ccug-website","phase":"ship"}

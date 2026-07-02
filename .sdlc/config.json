@@ -6,6 +6,9 @@
   "commands": {
     "validate": {
       "exec": "node scripts/validate.js"
+    },
+    "view_pr": {
+      "exec": "gh pr view feat/spec-driven-coding --repo ctcoalier/SDLCINSTALL --json url -q .url"
     }
   },
   "patterns": {

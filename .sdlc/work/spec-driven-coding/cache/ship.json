@@ -5,6 +5,12 @@
       "passed": true,
       "stdout": "static-site validate: all required files present and non-empty\n",
       "recorded_at": "2026-06-27T00:49:47.473Z"
+    },
+    "ship::spec-driven-coding::ship.pr-created::ship.pr-created::gh pr view feat/spec-driven-coding --repo ctcoalier/SDLCINSTALL --json url -q .url::C:\\VSCODEProjects\\SDLCInstall": {
+      "key": "ship::spec-driven-coding::ship.pr-created::ship.pr-created::gh pr view feat/spec-driven-coding --repo ctcoalier/SDLCINSTALL --json url -q .url::C:\\VSCODEProjects\\SDLCInstall",
+      "passed": true,
+      "stdout": "https://github.com/ctcoalier/SDLCINSTALL/pull/2\n",
+      "recorded_at": "2026-07-02T21:01:14.237Z"
     }
   }
 }

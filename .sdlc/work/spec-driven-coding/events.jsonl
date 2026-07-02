@@ -82,3 +82,12 @@
 {"ts":"2026-06-27T00:49:14.684Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"implement"}
 {"ts":"2026-06-27T00:49:37.226Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
 {"ts":"2026-06-27T00:49:47.598Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-06-27T01:11:47.798Z","kind":"external_state","work_item_id":"spec-driven-coding","phase":"ship","payload":{"attestedBy":"main-thread","note":"Shipped via fast-forward merge to main + push to ctcoalier/SDLCINSTALL (commit 1af1381). No PR/release flow used (direct-to-main, matching the initial site ship). validate.js passed; visual verification clean."}}
+{"ts":"2026-07-02T19:14:04.966Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-07-02T19:15:32.991Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-07-02T20:59:36.131Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-07-02T21:00:22.130Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-07-02T21:01:07.795Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-07-02T21:01:14.334Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
+{"ts":"2026-07-02T21:06:47.050Z","kind":"external_state","work_item_id":"spec-driven-coding","phase":"ship","payload":{"attestedBy":"ccoalier (user-approved via Claude Code session)","note":"Shipped via PR stack merged to main: PR #1 (feat/ccug-website -> main, rebase, commit 17cd137) then PR #2 (feat/spec-driven-coding -> main, rebase, merge commit 9ad2089). Both features now on remote main. Static HTML site: no CI checks, no version bump/tag/publish artifact — pr-checks-green and the release/tag/publish nodes are N/A for this project type. validate.js passed locally. Supersedes the earlier (incorrect) attestation which claimed a direct-to-main ff-merge as commit 1af1381 that never actually landed on main."}}
+{"ts":"2026-07-02T21:06:53.744Z","kind":"state_persisted","work_item_id":"spec-driven-coding","phase":"ship"}
