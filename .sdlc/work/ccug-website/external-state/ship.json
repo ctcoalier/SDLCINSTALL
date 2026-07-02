@@ -1,8 +1,8 @@
 {
-  "created_at": "2026-06-24T16:46:49.489Z",
-  "created_by": "user",
+  "created_at": "2026-07-02T21:18:03.081Z",
+  "created_by": "ccoalier (user-approved via Claude Code session)",
   "phase": "ship",
   "work_item_id": "ccug-website",
   "attested": true,
-  "note": "User opted to keep the ship local. Website built, verified, and committed locally on branch feat/ccug-website-static-site (commit bf9327c, 68 files under SDLCInstall/). Remote push/PR deferred: origin ctcoalier/arckit_PV is inaccessible to the authenticated gh account. CHANGELOG [Unreleased] updated; validate command passes."
+  "note": "Shipped to remote main via PR #1 (feat/ccug-website -> main, rebase-merged, commit 17cd137, verified ancestor of origin/main). Deliverables on main: src/index.html, src/news.html, src/guides.html, src/assets/styles.css. Static HTML site: no CI checks, no version bump/tag/publish artifact — pr-checks-green and the release/tag/publish nodes are N/A. Supersedes the earlier (now-stale) 2026-06-24 attestation which described a local-only commit bf9327c on branch feat/ccug-website-static-site and referenced the defunct remote ctcoalier/arckit_PV; that branch/commit no longer reflect reality and the real origin is ctcoalier/SDLCINSTALL."
 }
