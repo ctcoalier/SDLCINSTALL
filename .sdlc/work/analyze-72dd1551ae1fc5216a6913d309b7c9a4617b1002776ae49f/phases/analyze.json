@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "phase": "analyze",
+  "nodes": {
+    "analyze.context-gathered": {
+      "status": "converged",
+      "converged_at": "2026-07-03T02:06:51.297Z"
+    },
+    "analyze.prd-analyzed": {
+      "status": "in_progress"
+    },
+    "analyze.prd-simulated": {
+      "status": "pending"
+    },
+    "analyze.prd-saved": {
+      "status": "pending"
+    },
+    "analyze.roadmap-analyzed": {
+      "status": "pending"
+    },
+    "analyze.roadmap-simulated": {
+      "status": "pending"
+    },
+    "analyze.roadmap-estimated": {
+      "status": "pending"
+    },
+    "analyze.roadmap-saved": {
+      "status": "pending"
+    },
+    "analyze.roadmap-aligned": {
+      "status": "pending"
+    },
+    "analyze.adr-cited": {
+      "status": "pending"
+    },
+    "analyze.adr-compliant": {
+      "status": "pending"
+    },
+    "analyze.complete": {
+      "status": "pending"
+    }
+  },
+  "agents": [
+    {
+      "run_id": "2026-07-02T00:00:00Z-a8f3k9",
+      "agent": "gathering-product-context",
+      "result": "{\"status\":\"ok\",\"signals\":{\"has_prd\":true,\"has_roadmap\":true,\"prd_lifecycle_state\":\"analyzed\",\"roadmap_lifecycle_state\":\"analyzed\",\"related_specs\":[\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\",\"docs/superpowers/specs/2026-06-26-spec-driven-coding-page.md\"],\"material_pointers\":[\"docs/product/ccug-website/prd.md\",\"docs/product/ccug-website/roadmap.md\",\"src/index.html\",\"src/news.html\",\"src/guides.html\",\"src/spec.html\",\"src/events.html\",\"src/assets/styles.css\",\"CLAUDE.md\",\"existing mailto: pattern in footers and CTAs (hello@sdccug.example)\"],\"confirmed_intent\":\"Add a persistent Feedback button across all site pages that opens the visitor's email client via a mailto: link pre-filled to hello@sdccug.example with subject 'Site feedback'. Chosen because the site is fully static (no backend, no form POSTs per CLAUDE.md and the foundational-frontend-stack ADR); mailto matches existing RSVP and 'Get meetup updates' CTAs. Must follow coding standards: semantic HTML5, shared stylesheet .btn components, aria-current, WCAG AA, identical header/footer chrome across pages.\"}}",
+      "at": "2026-07-03T02:06:39.525Z"
+    },
+    {
+      "run_id": "2026-07-02T000000Z-a8f3k9",
+      "agent": "gathering-product-context",
+      "result": "{\"status\":\"ok\",\"signals\":{\"has_prd\":true,\"has_roadmap\":true,\"prd_lifecycle_state\":\"analyzed\",\"roadmap_lifecycle_state\":\"analyzed\",\"related_specs\":[\"docs/superpowers/specs/2026-06-24-ccug-website-static-site.md\",\"docs/superpowers/specs/2026-06-26-spec-driven-coding-page.md\"],\"material_pointers\":[\"docs/product/ccug-website/prd.md\",\"docs/product/ccug-website/roadmap.md\",\"src/index.html\",\"src/news.html\",\"src/guides.html\",\"src/spec.html\",\"src/events.html\",\"src/assets/styles.css\",\"CLAUDE.md\",\"existing mailto: pattern in footers and CTAs (hello@sdccug.example)\"],\"confirmed_intent\":\"Add a persistent Feedback button across all site pages that opens the visitor's email client via a mailto: link pre-filled to hello@sdccug.example with subject 'Site feedback'. Chosen because the site is fully static (no backend, no form POSTs per CLAUDE.md and the foundational-frontend-stack ADR); mailto matches existing RSVP and 'Get meetup updates' CTAs. Must follow coding standards: semantic HTML5, shared stylesheet .btn components, aria-current, WCAG AA, identical header/footer chrome across pages.\"}}",
+      "at": "2026-07-03T02:06:51.297Z"
+    }
+  ],
+  "approvals": [],
+  "convergence": []
+}
