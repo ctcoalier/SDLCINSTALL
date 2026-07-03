@@ -351,6 +351,7 @@ main { display: block; }
 .site-footer a { color: var(--sand); }
 .site-footer .muted { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
 .site-footer .foot-brand { font-weight: 800; color: var(--white); }
+.site-footer .foot-feedback { display: inline-block; margin-top: 0.9rem; color: #3a2400; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
