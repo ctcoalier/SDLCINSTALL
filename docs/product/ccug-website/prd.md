@@ -2,7 +2,7 @@
 type: prd
 lifecycle_state: analyzed
 last_action: analyze
-last_action_date: 2026-06-23
+last_action_date: 2026-07-02
 ---
 
 # PRD — San Diego Claude Code Users Group (CCUG) Website
@@ -115,3 +115,113 @@ the target state and the metric).
    what they'll get, when landing on the site for the first time.
 6. Minimize the likelihood that a member can't tell where to go next (News vs
    Guides), when arriving on the home page.
+
+---
+
+## Feature — Site Feedback Button (analyzed 2026-07-02)
+
+A small, proportionate feature analyzed against the existing analyzed PRD. It
+does not change the site's strategy, stack, or content model; it adds one
+persistent affordance for visitor-to-organizer feedback.
+
+### Job To Be Done
+
+> When I have an opinion about the site — something confusing, broken, missing,
+> or worth praising — I want a fast, obvious way to tell the organizers, so I
+> feel heard and can help shape the site I rely on between meetups.
+
+The "customer" in the JTBD frame is the site visitor (primarily an active
+member, secondarily a newcomer). The internal counterpart the job serves is the
+**organizer**, for whom inbound feedback is the only lightweight signal about
+what to fix or publish next on an otherwise analytics-free static site.
+
+### Target users
+
+- **Primary — active members.** They return between meetups, form opinions about
+  usefulness and freshness, and are the population whose repeat-visit habit is
+  the site's headline metric. They are most likely to have actionable feedback.
+- **Secondary — newcomers.** First-visit friction ("I couldn't find X") is
+  valuable signal, and an obvious feedback affordance lowers the bar to report it.
+- **Beneficiary — organizers.** Not the clicker, but the party the job ultimately
+  serves; feedback is their qualitative substitute for backend analytics.
+
+### JTBD switch interview — 4 forces
+
+1. **Push of the situation** — A visitor notices something (a dead-ish link, a
+   stale entry, a topic they wish existed) but has no in-context way to say so;
+   the reaction dissipates and the organizers never learn about it.
+2. **Pull of the new** — A single, always-present "Feedback" button that opens a
+   pre-addressed, pre-subjected email in one click — no form to fill, no account,
+   no page to hunt for a contact address.
+3. **Anxiety** — "Will this actually reach anyone / get read?" and "Do I have to
+   write a formal message?" Mitigated by a recognizable destination address and a
+   ready subject line that signals the low-effort, informal nature of the channel.
+4. **Habit** — Today the fallback is doing nothing, mentioning it verbally at the
+   next meetup, or digging for a contact address in the footer. The button must
+   be visible enough to beat "do nothing."
+
+**6-stage timeline placement:** *first thought* (notices something worth saying)
+→ *passive looking* (glances for any way to comment) → *active looking* (scans the
+page/footer for a contact) → *deciding* (is it worth the effort to reach out?) →
+*first use* (clicks Feedback, email client opens pre-filled) → *ongoing use*
+(feels heard, reaches out again next time something comes up).
+
+### Ulwick outcome statements
+
+1. Minimize the time it takes a visitor to locate a way to send feedback, when
+   they form an opinion while browsing any page (target: findable in one glance,
+   no scrolling required).
+2. Minimize the number of steps between wanting to give feedback and a ready-to-
+   send message, when a visitor decides to reach out (target: one click to a
+   pre-addressed, pre-subjected email).
+3. Minimize the likelihood that feedback lands in the wrong place or is lost,
+   when a visitor sends it (target: every submission arrives at the organizers'
+   monitored inbox).
+4. Minimize the effort it takes an organizer to receive and triage feedback,
+   when keeping the static site current (target: zero new tooling — feedback
+   arrives as ordinary, consistently-subjected email).
+5. Minimize the likelihood that a visitor abandons the attempt because the
+   channel feels heavyweight or ambiguous, when they are on the fence about
+   reaching out (target: no form, no login, informal tone signalled by the
+   pre-filled subject).
+6. Minimize the likelihood that the feedback affordance looks or behaves
+   differently across pages, when a visitor moves through the site (target:
+   identical chrome and behavior on every page).
+
+### Success signals
+
+- Organizers receive occasional, correctly-subjected "Site feedback" emails —
+  qualitative evidence the channel works and is discoverable.
+- No regression to the primary PRD metric (repeat visits) — the button is
+  additive and unobtrusive.
+- Consistent presence and appearance across all pages (no per-page drift).
+
+### Scope / non-goals
+
+**In scope**
+- A single, persistent "Feedback" call-to-action present on every page, using the
+  shared header/footer chrome and the existing `.btn` component styling.
+- A `mailto:hello@sdccug.example?subject=Site%20feedback` link — matching the
+  site's established mailto pattern (the existing RSVP / "Get meetup updates"
+  CTAs) and the static-only constraint.
+- Semantic, accessible markup: keyboard-reachable, WCAG AA contrast, identical
+  across pages.
+
+**Non-goals (v1)**
+- No backend, no form POST, no serverless endpoint, no stored data — the site is
+  fully static per CLAUDE.md and the foundational-frontend-stack ADR.
+- No embedded form, no third-party feedback widget or tracking.
+- No categorization, ratings, or per-page feedback context in v1.
+- Final placement (footer vs. persistent floating vs. header) is a spec-phase
+  decision, not settled here.
+
+### Open questions (non-blocking — resolve in spec)
+
+- **Placement:** persistent footer CTA (matches existing chrome, lowest risk) vs.
+  a floating always-visible button (more discoverable, more novel styling). Intent
+  is "persistent"; both satisfy it. Recommend footer-anchored for chrome
+  consistency unless the spec prioritizes glance-findability.
+- **Prefilled body:** whether to include a short `&body=` template (e.g., "Page:
+  / What happened:"). Low cost; deferred to spec.
+- **Destination address:** `hello@sdccug.example` is a placeholder consistent with
+  the site's other mailto links; swap for the real inbox when known.
